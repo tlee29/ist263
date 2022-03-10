@@ -1,4 +1,12 @@
-nav a{background-color: #F7ECDE;}
+body {
+    background-color: #FBF8F1;
+    color: #203239 ;
+}
+h1 {color: #54BAB9;}
+a {color:  #139487;}  
+nav {background-color: #F7ECDE;}
+nav a {
+      color: #D29D2B; }
 nav a:hover{background-color: #E9DAC1;}
 nav {padding: 10px}
 nav {margin-bottom : 30px}
