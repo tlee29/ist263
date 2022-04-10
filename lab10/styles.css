@@ -1,0 +1,32 @@
+body {
+    background-color: #FBF8F1;
+    color: #203239 ;
+}
+h1 {color: #54BAB9;}
+a {color:  #139487;}  
+.evenrow {background-color: pink;}
+nav {background-color: #F7ECDE;}
+nav a {
+      color: #D29D2B; }
+nav a:hover{background-color: #E9DAC1;}
+nav {padding: 10px}
+nav {margin-bottom : 30px}
+.quote {float:right;}
+.selfpic {display: block; margin-left: auto; margin-right: auto;}
+
+.part1, .part2 {display:flex;}
+.part1 {flex:1; background-color: #D29D2B; margin:10px; padding:10px; border-radius: 1em;}
+.part2 {flex:1; background-color:#54BAB9; margin:10px; padding:10px;border-radius:1em; flex-wrap:wrap; }
+
+
+.address {float:left;width:180px;}
+.links {width:100%;}
+.map {float:left; order:2;}
+.forms {width:100%; order:1;}
+
+.selfpic {max-width: 100%;}
+
+@media only screen and (max-width: 600px){
+    nav a {display:block;line-height: 1.6;}
+    span {display:none;}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel = "stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <a href = "index.html">Home</a> <span>|</span>
+            <a href = "skills.html">Skills</a> <span>|</span>
+            <a href = "contact.html">Contact</a>
+        </nav>
+        
+        <h1>Contact</h1>
+        <div class = "part1">
+            <div class = "address">
+                <p>
+                    Taeheun Lee<br>
+                    200 Euclid Ave<br>
+                    13210 Syracuse NY
+                </p>
+            </div>
+            <div class ="links">
+                <a href="mailto:tlee29@syr.edu">tlee29@syr.edu</a>
+                <br><br>
+
+                <a href="https://www.linkedin.com/in/taeheun-lee">
+                <img src="../images/logo-sized.png" alt="Linkedin Logo">
+                My Linkedln Page</a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class = "part2">
+        
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.254600901147!2d-76.13156438452215!3d43.036074379147294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f375cbc7b5fd%3A0x3a43b319d03865b!2s200%20Euclid%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1644511277184!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+
+            <div class="forms">
+                <form action = "https://formspree.io/f/mayvobnl" method = "post">
+                    <label for= "fullname">Full Name</label>    
+                    <input type ="text" name = "fullname" id ="fullname"><br>
+                    <label for = "contactinfo">Contact Info.</label>
+                    <input type ="text" name ="contactinfo" id ="contactinfo"><br>
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback"></textarea><br>
+
+                    <p>How do you want to contact?</p>
+                    <label for="email">Via Email</label>
+                    <input type="radio" id="email" name="howcont">
+                    <label for ="phonecall">Via Phone Call</label>
+                    <input type = "radio" id ="phonecall" name="howcont">
+                    <label for ="sns">Via Social Media</label>
+                    <input type = "radio" id ="sns" name="howcont">
+
+                    <input type = "submit" value ="send order">
+                </form>
+            </div>
+        </div>
+    </body>
+
+    
+</html>
