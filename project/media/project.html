@@ -42,7 +42,8 @@
             background-color: #83bd75;
             flex-wrap:wrap;
                   padding:50px;
-                  margin:20px;}
+                  margin:20px;
+                  }
         .proddes {padding:20px;
                     margin:10px;
                     text-align: justify;
@@ -76,6 +77,19 @@
                 color:white;}
         .feedback {color:#363062;}
         footer{margin-bottom:100px;}
+
+        @media only screen and (max-width: 1000px) {
+            
+                nav {display:flex;
+                    justify-content: center;}
+                .netflix, .netflixdes, .proddes, .prodpic, .netflixdiv, .proddiv{flex-direction: column;
+                     justify-content: center;
+                    margin:auto;
+                    padding:auto;}
+                footer{text-align:center;
+                       padding:0px;}
+                .submitbutton {justify-content: center;}
+        }
 
     </style>
 </head>
