@@ -4,56 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.css">
     <title>PROJECTS</title>
+    <style>
+        body{background-color: #E9EFC0;
+            color: #1A3C40;
+            font-size:15px;}
+        i{color:#383838;}
+        .container {display:flex;
+                    justify-content: space-around;}
+        .bar2 {padding-left: 100px;}
+        .bar3 {padding-left: 100px;}
+        nav {padding: 1.5em}
+        nav {margin-bottom : 30px;
+             margin-top:15px;}
+        nav a {color: #1A3C40;
+               font-weight: bold;
+               text-decoration: none;}
+        nav a:hover{color: #4e944f;}
+        .netflixdiv {display:flex;
+                    justify-content: space-around;}
+        .netflix {width:600px;
+                  background-color: #b4e197;
+                  padding:50px;
+                  margin:20px;
+                  flex-wrap:wrap;
+                  }
+        .netflixdes {padding:20px;
+                    margin:10px;
+                    text-align: justify;
+                    flex-wrap:wrap;
+                    }
+        .proddiv {display:flex;
+                  justify-content: space-around;}
+        .prodpic {width:600px;
+            background-color: #83bd75;
+            flex-wrap:wrap;
+                  padding:50px;
+                  margin:20px;}
+        .proddes {padding:20px;
+                    margin:10px;
+                    text-align: justify;
+                    flex-wrap:wrap;
+                    }
+        hr {margin-top: 130px;
+            margin-bottom: 50px;
+            color: #1A3C40;
+            height:2px;
+            border:none;
+            background-color: #1A3C40;}
+        
+        .links {display:flex;
+            justify-content: center;}
+
+        .linkedln {margin : 15px;
+                    margin-left: 25px;
+                    margin-top:none;}
+        .insta {margin : 15px;
+                margin-right: 25px;}
+        .forms {margin :15px;
+                display:flex;
+                justify-content: center;}
+        #feedbackbox {padding:12px;
+                      margin-top:10px;
+                      margin-bottom:10px;
+                    }
+        .submitbutton {
+                 margin-left:65px;
+                background-color:#515e63;
+                color:white;}
+        .feedback {color:#363062;}
+        footer{margin-bottom:100px;}
+
+    </style>
 </head>
 <body>
     <header id="header" class = "site-header">
         <div class="container">
             <nav id="site-navigation" class="main-navigation">
-                <a href="home.html">Home</a>
-                <a href="project.html">PROJECTS</a> 
-                <a href="news.html">IT NEWS</a>
+                 <a href="home.html" class="bar1">HOME</a>
+                <a href="project.html" class="bar2">PROJECTS</a> 
+                <a href="news.html" class="bar3">IT NEWS</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <div class="netflixdiv">
         <a href="https://projects.invisionapp.com/prototype/cl1ty53tk002r9s01b9ee1gvh/play">
-            <img src="netflix.png" alt="Netflix">
+            <img src="netflix.png" class ="netflix" alt="Netflix">
         </a>
+        
+        <div class="netflixdes">
+        <h2>#1 Invision Project [2022 FEB]</h2>
         <p>
-           #1 Invision Project [2022 FEB]<br>
-           Designed a user-friendly online platform available on mobile by using Invision.<br>
-           Uploaded three screens : Loading Screen, Home Screen, Single Movie<br>
-           Set the tone by capturing the attention of the users with the eye-catching graphic effects<br>
-           Presents all the key features, utiliyy options such as menu, serach and account management<Br>
-           Single Movie view for users to choose particular film after browsing through the movie library
+           Designed a user-friendly online platform available on mobile by using Invision. <br>
+           Uploaded three screens : Loading Screen, Home Screen, Single Movie. Set the tone by capturing the attention of the users with the eye-catching graphic effects. Presents all the key features, utiliyy options such as menu, serach and account management. <br>Single Movie view for users to choose particular film after browsing through the movie library.
         </p>
+        </div>
+        </div>
 
-        <a><img src="productivity.png" alt="Productivity"></a> <!--Add a link to the page after the project is finished-->
+        <div class="proddiv">
+        <div class="prod">
+        <a><img src="productivity.png" alt="Productivity" class="prodpic"></a> <!--Add a link to the page after the project is finished-->
+        </div>
+
+        <div class="proddes">
+        <h2> #2 R Research Project [Currently Working On]</h2>
         <p>
-           #2 R Research Project [Currently Working On]<br>
            Conducting a Research Paper on "Software Engineering Distractions and Productivity During Covid-19"<br>
            With a publicly published archival dataset, investigating the impact of remote-working environment on productivity of software engineers.<Br>
            Variables on psychological and social factors such as elements of productivity is measured by asking certain questions to the participants,<Br>
            and all the survey questions are formatted in likert-scale for the numeric, quantitative dataset.
         </p>
+        </div>
+        </div>
+
 
     </main>
     <footer>
         <hr>
         <div class ="links">
-            <a href="mailto:tlee29@syr.edu">tlee29@syr.edu</a> <!--insert mail logo here-->
-            <br>
+            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln">
+            <i class="fa-brands fa-linkedin fa-2x"></i></a>
             
-            <a href="https://www.linkedin.com/in/taeheun-lee">
-            My Linkedln Page</a> <!--insert ln logo later-->
+            <a href="mailto:tlee29@syr.edu" class="insta">
+            <i class="fa-solid fa-at fa-2x"></i></a>
         </div>
+
         <div class ="forms">
         <form action = "https://formspree.io/f/mayvobnl" method = "post">
-            <label for="feedback">Leave Message Here</label>
-            <textarea name="feedback" id="feedback"></textarea><br>
-            <input type = "submit" value ="send order">
+            <label for="feedback" class="feedback">Please Reach Out To Me!</label><br>
+            <textarea name="feedback" id="feedbackbox"></textarea><br>
+            <input type = "submit" value ="SEND" class="submitbutton">
         </form>
         </div>
     </footer>

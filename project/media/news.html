@@ -5,15 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT NEWS</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        body {background-color: #3a3845;
+        color: #f7ccac;
+        font-size:15px;}
+        i{color:#f7ccac;}
+        .container {display:flex;
+                    justify-content: space-around;}
+        .bar2 {padding-left: 100px;}
+        .bar3 {padding-left: 100px;}
+        nav {padding: 1.5em}
+        nav {margin-bottom : 30px;
+             margin-top:15px;}
+        nav a {color: #c69b7b;
+               font-weight: bold;
+               text-decoration: none;}
+        nav a:hover{color: #4e944f;}
+        main {padding:30px;
+              margin-left:40px;
+              margin-right:40px;
+              text-align: justify;}
+        h1 {color:#ede6db;}
+        h2{color:#cdbe78;}
+        .pic {display:block;
+              margin-left:auto;
+              margin-right:auto;
+            width:50%;
+            padding:30px;
+            background-color: #826f66;
+        }
+        .webpic {background-color: #ede6db;
+        padding:30px;}
+        .forms {margin :15px;
+                display:flex;
+                justify-content: center;}
+        #feedbackbox {padding:12px;
+                      margin-top:10px;
+                      margin-bottom:10px;
+                    }
+        .submitbutton {
+                 margin-left:65px;
+                background-color:#515e63;
+                color:white;}
+        .feedback {color:#ede6db;}
+        footer{margin-bottom:100px;}
+        .links {display:flex;
+            justify-content: center;
+            margin-top:30px;}
+
+        .linkedln {margin : 15px;
+                    margin-left: 25px;
+                    margin-top:none;}
+        .insta {margin : 15px;
+                margin-right: 25px;}
+    </style>
 </head>
 <body>
     <header id="header" class = "site-header">
         <div class="container">
             <nav id="site-navigation" class="main-navigation">
-                <a href="home.html">Home</a>
-                <a href="project.html">PROJECTS</a> 
-                <a href="news.html">IT NEWS</a>
-            </nav>
+                <a href="home.html" class="bar1">HOME</a>
+               <a href="project.html" class="bar2">PROJECTS</a> 
+               <a href="news.html" class="bar3">IT NEWS</a>
+           </nav>
         </div>
     </header>
 
@@ -27,7 +83,9 @@
     <h2>Warren Buffett bought 11.4% HP stock</h2>
     <p>Warren has been known as a successful investor who doesn't lose money. HP has been an undervalued company compared to techs like MS or Apple. People were wondering about why Warren bought the stock from them. After the news of warren buying HP's stock, their stock value went up to 15%. </p>
 
-    <img src="tesla.webp" alt="cybertruck">
+    <div class="webpic">
+    <img src="tesla.webp" alt="cybertruck" class="pic">
+    </div>
     <h2>Tesla opened a factory at Texas and will start selling cybertrucks in 2023</h2>
     <p>There are few specs of cybertrucks. 1) There is no door holder. It is expected to be automated. 2) Side mirrors </p>
 
@@ -36,17 +94,18 @@
     <footer>
         <hr>
         <div class ="links">
-            <a href="mailto:tlee29@syr.edu">tlee29@syr.edu</a> <!--insert mail logo here-->
-            <br>
+            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln">
+                <i class="fa-brands fa-linkedin fa-2x"></i></a>
             
-            <a href="https://www.linkedin.com/in/taeheun-lee">
-            My Linkedln Page</a> <!--insert ln logo later-->
+            <a href="mailto:tlee29@syr.edu" class="insta">
+            <i class="fa-solid fa-at fa-2x"></i></a>
         </div>
+
         <div class ="forms">
         <form action = "https://formspree.io/f/mayvobnl" method = "post">
-            <label for="feedback">Leave Message Here</label>
-            <textarea name="feedback" id="feedback"></textarea><br>
-            <input type = "submit" value ="send order">
+            <label for="feedback" class="feedback">Please Reach Out To Me!</label><br>
+            <textarea name="feedback" id="feedbackbox"></textarea><br>
+            <input type = "submit" value ="SEND" class="submitbutton">
         </form>
         </div>
     </footer>

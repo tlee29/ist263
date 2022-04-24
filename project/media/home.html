@@ -5,33 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        body {background-color: #1E1214;
+              color: #F0F0D0;
+              font-size:15px;}
+        i{color:#57837b;}
+        .container {display:flex;
+                    justify-content: space-around;}
+        .bar2 {padding-left: 100px;}
+        .bar3 {padding-left: 100px;}
+        nav {padding: 1.5em}
+        nav {margin-bottom : 30px;
+             margin-top:15px;}
+        nav a {color: #A7B51B;
+               text-decoration: none;
+               font-weight:bold;
+            }
+        nav a:hover{color: #f1ecc3;}
+        .mainpic {
+        
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        .bannerback {
+            background-color: #066163;
+            width: 85%;
+            padding:30px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .intro {text-align: center;
+                line-height: 1.7em;
+                margin-top:35px;}
+        .sub-text1 {padding:60px;
+                    text-align: left;}
+        .sub-text2 {padding-top:20px;}
+        hr {margin:5%;}
+        h2 {color :#D7A86E;}
+        .line1 {font-weight:bold;}
+       
+        .links {display:flex;
+            justify-content: center;}
+
+        .linkedln {margin : 15px;
+                    margin-left: 25px;
+                    margin-top:none;}
+        .insta {margin : 15px;
+                margin-right: 25px;}
+        .forms {margin :15px;
+                display:flex;
+                justify-content: center;}
+        #feedbackbox {padding:12px;
+                      margin-top:10px;
+                      margin-bottom:10px;
+                    }
+        .submitbutton {
+                 margin-left:65px;
+                background-color:#515e63;
+                color:white;}
+        .feedback {color:#f1ecc3;}
+
+
+    </style>
 </head>
 <body>
     <header id="header" class = "site-header">
         <div class="container">
             <nav id="site-navigation" class="main-navigation">
-                <a href="home.html">Home</a>
-                <a href="project.html">PROJECTS</a> 
-                <a href="news.html">IT NEWS</a>
+                <a href="home.html" class="bar1">HOME</a>
+                <a href="project.html" class="bar2">PROJECTS</a> 
+                <a href="news.html" class="bar3">IT NEWS</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <h1 class="main-text">I AM A DATA ANALYST</h1>
-        <figure><img src="mainpic.jpg" alt="banner" class="mainpic"></figure>
-        <p>An ambitious undergraduate student who is focusing on Applied Data Analytics and a secondary in Mathematics.<br>
+        <div class= "bannerback"><figure><img src="SUBNAIL.png" alt="banner" class="mainpic"></figure></div>
+        <p class ="intro">An ambitious undergraduate student who is focusing on Applied Data Analytics and a secondary in Mathematics.<br>
         Highly interested in pursuing my career in machine learning, after graduating from Syracuse University in May, <br>
         I plan of using my background in statistics and data science for working in the Artificial Intelligence industry.</p>
+        
+        <hr>
 
-        <h2 class="sub-text1">Experience</h2>
-            <p>Office Assistant, PT. Kharis Raya- Trading Corporation, South Jakarta, Indonesia</p>
+        <div class="sub-text1">
+        <h2 class="experience">Experience</h2>
+            <p class="line1">Office Assistant, PT. Kharis Raya- Trading Corporation, South Jakarta, Indonesia</p>
             <ul>
                 <li>Collected and input data of orders into Excel spreadsheet software for data visualization</li>
                 <li>Utilized Microsoft Suite to conduct budgeting calcliations</li>
                 <li>Issued invoices and purchase orders for a business transaction</li>
             </ul>
-            <p>Administrative Assistant, Read 101 - English Education Center, Seoli, South Korea </p>
+            <p class="line1">Administrative Assistant, Read 101 - English Education Center, Seoli, South Korea </p>
             <ul>
                 <li>Performed administration duties including organizing library management system</li>
                 <li>Integrated student and instructor data and entered it into database</li>
@@ -39,6 +107,7 @@
                 <li>Conducted sales interviews with up to 15 potential customers per month</li>
                 <li>Trained new instructors to get familiarized with a task and increase productivity of work</li>
             </ul>
+     
         <h2 class="sub-text2">Education</h2>
             <p>
                 Syracuse University, School of Information Studies, Syracuse, NY May 2023<br>
@@ -46,20 +115,23 @@
                 Major in Applied Data Analytics<br>
                 Minor in Mathematics
             </p>
-        <h2 class="sub-text3">Volunteer</h2>
-            <p>Teaching Assistant, BOAZ Project, Technology Education for Refugees, Syracuse, NY</p>
+        
+        <h2 class="sub-text2">Volunteer</h2>
+            <p class="line1">Teaching Assistant, BOAZ Project, Technology Education for Refugees, Syracuse, NY</p>
             <ul>
                 <li>Taught refugees typing, Microsoft Office Suite, and video editing to acquire employment</li>
                 <li>Conversed fluently in English with classroom of 12 ESL learners</li>
                 <li>Received and implemented teaching strategies from teaching faclity</li>
                 <li>Managed a student one-on-one on weekly basis</li>
             </ul>
-            <p>General Member, KIT - Korean Information Technologies Club, Syracuse University, Syracuse, NY </p>
+            <p class="line1">General Member, KIT - Korean Information Technologies Club, Syracuse University, Syracuse, NY </p>
             <ul>
                 <li>Coordinated with 10 members to design a website for the Korean community at Syracuse University</li>
                 <li>Developed HTML and CSS to build website using school domain</li>
             </ul>
-        <h2 class="sub-text4">Technical Skills</h2>
+
+
+        <h2 class="sub-text2">Technical Skills</h2>
             <ul>
                 <li>MySQL/Microsoft SQL Server</li>
                 <li>R Script</li>
@@ -68,9 +140,15 @@
                 <li>Figma/Invision</li>
                 <li>Adobe Illustration/Adobe Photoshop</li>
             </ul>
-        <h2 class="sub-text5">Honors & Awards</h2>
+    
+        
+    
+        <h2 class="sub-text2">Honors & Awards</h2>
             <p>Dean's List Fall 2021</p>
-        <h2 class="sub-text6">Academic Courses</h2>
+        
+
+        
+        <h2 class="sub-text2">Academic Courses</h2>
             <ul>
                 <li>IST 343: Data in Society - examination of how society creates and is created by digital data and algorithms and an
                 exploration of social, political, legal, and professional implications of various contemporary data-related issues</li>
@@ -81,25 +159,31 @@
                 <li>IST 233: Computer Networking - manage digital computer networks. Wired and wireless local and wide area networks,
                 Internet protocols, telecommunications, and network security</li>
             </ul>
+        </div>
     </main>
 
     <footer>
         <hr>
+
         <div class ="links">
-            <a href="mailto:tlee29@syr.edu">tlee29@syr.edu</a> <!--insert mail logo here-->
-            <br>
+            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln">
+                <i class="fa-brands fa-linkedin fa-2x"></i></a>
             
-            <a href="https://www.linkedin.com/in/taeheun-lee">
-            My Linkedln Page</a> <!--insert ln logo later-->
+            <a href="mailto:tlee29@syr.edu" class="insta">
+            <i class="fa-solid fa-at fa-2x"></i></a>
         </div>
+
         <div class ="forms">
         <form action = "https://formspree.io/f/mayvobnl" method = "post">
-            <label for="feedback">Leave Message Here</label>
-            <textarea name="feedback" id="feedback"></textarea><br>
-            <input type = "submit" value ="send order">
+            <label for="feedback" class="feedback">Please Reach Out To Me!</label><br>
+            <textarea name="feedback" id="feedbackbox"></textarea><br>
+            <input type = "submit" value ="SEND" class="submitbutton">
         </form>
         </div>
+        <hr>
     </footer>
+
+
 
 </body>
 </html>  
