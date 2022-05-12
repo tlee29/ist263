@@ -80,9 +80,12 @@
                 color:white;}
         .feedback {color:#363062;}
         footer{margin-bottom:100px;}
+        
+        a {text-align: center; color:black; text-decoration: none;}
 
         @media only screen and (max-width:600px) {
-            .container {display:block; display: flex; 
+            .container {display:block; 
+                display: flex; 
                 list-style-type: none;
                 flex-wrap: wrap;}
                  
@@ -108,19 +111,20 @@
             .netflixdiv {
                 display:block;
             }
-            .netflix {max-width: 100%;
+            .netflix {
                 text-align: center;
-                width: 100px; 
+                max-width: fit-content; 
                 
             }
             .proddiv {
                 display:block;
             }
             .prodpic {
-                max-width: 100%;
+                
                 text-align: center;
-                width: 100px; 
+                max-width: fit-content;  
             }
+
             main {margin:0; padding:0;}
             
         }
@@ -157,7 +161,7 @@
 
         <div class="proddiv">
         <div class="prod">
-        <a><img src="productivity.png" alt="Productivity" class="prodpic"></a> <!--Add a link to the page after the project is finished-->
+        <img src="productivity.png" alt="Productivity" class="prodpic"> <!--Add a link to the page after the project is finished-->
         </div>
 
         <div class="proddes">
@@ -176,15 +180,15 @@
     <footer>
         <hr>
         <div class ="links">
-            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln">
-            <i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln" alt="linkedln">
+            <i class="fa-brands fa-linkedin fa-2x"></i><br>linkedln</a>
             
-            <a href="mailto:tlee29@syr.edu" class="insta">
-            <i class="fa-solid fa-at fa-2x"></i></a>
+            <a href="mailto:tlee29@syr.edu" class="insta" alt="linkedln">
+            <i class="fa-solid fa-at fa-2x"></i><br>email</a>
         </div>
 
         <div class ="forms">
-        <form action = "https://formspree.io/f/mayvobnl" method = "post">
+        <form action = "https://formspree.io/f/mayvobnl" method = "post" alt="post">
             <label for="feedbackbox" class="feedback">Please Reach Out To Me!</label><br>
             <textarea name="feedback" id="feedbackbox"></textarea><br>
             <input type = "submit" value ="SEND" class="submitbutton">

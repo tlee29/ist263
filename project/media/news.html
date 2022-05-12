@@ -36,6 +36,14 @@
             padding:30px;
             background-color: #826f66;
         }
+        table, th, td {
+            border : 1px solid brown;
+            width: 50%;
+            padding:5px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
         .webpic {background-color: #ede6db;
         padding:30px;}
         .forms {margin :15px;
@@ -60,6 +68,7 @@
                     }
         .insta {margin : 15px;
                 margin-right: 25px;}
+        a {text-align: center; color:white; text-decoration: none;}
         
                 @media only screen and (max-width:600px) {
                     .container {display:block; display: flex; 
@@ -97,9 +106,9 @@
     <header id="header" class = "site-header">
         <div class="container">
             <nav id="site-navigation" class="main-navigation">
-                <a href="home.html" class="bar1">HOME</a>
-               <a href="project.html" class="bar2">PROJECTS</a> 
-               <a href="news.html" class="bar3">IT NEWS</a>
+                <a href="home.html" class="bar1" alt="bar1">HOME</a>
+               <a href="project.html" class="bar2" alt="bar2">PROJECTS</a> 
+               <a href="news.html" class="bar3" alt="bar3">IT NEWS</a>
            </nav>
         </div>
     </header>
@@ -118,22 +127,34 @@
     <img src="tesla.webp" alt="cybertruck" class="pic">
     </div>
     <h2>Tesla opened a factory at Texas and will start selling cybertrucks in 2023</h2>
-    <p>There are few specs of cybertrucks. 1) There is no door holder. It is expected to be automated. 2) Side mirrors </p>
+    <table>
+        <caption>Specs of cybertrucks</caption>
+        
+        <tr>
+            <th>No. of Door Holder</th>
+            <th>No. of Side Mirrors</th>
+        </tr>
+
+        <tr>
+            <td>None</td>
+            <td>One</td>
+        </tr>
+    </table>
 
     </main>
 
     <footer>
         <hr>
         <div class ="links">
-            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln">
-                <i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/taeheun-lee" class="linkedln" alt="linkedln">
+                <i class="fa-brands fa-linkedin fa-2x"></i><br>linkedln</a>
             
-            <a href="mailto:tlee29@syr.edu" class="insta">
-            <i class="fa-solid fa-at fa-2x"></i></a>
+            <a href="mailto:tlee29@syr.edu" class="insta" alt="insta">
+            <i class="fa-solid fa-at fa-2x"></i><br>email</a>
         </div>
 
         <div class ="forms">
-        <form action = "https://formspree.io/f/mayvobnl" method = "post">
+        <form action = "https://formspree.io/f/mayvobnl" method = "post" alt="post">
             <label for="feedbackbox" class="feedback">Please Reach Out To Me!</label><br>
             <textarea name="feedback" id="feedbackbox"></textarea><br>
             <input type = "submit" value ="SEND" class="submitbutton">

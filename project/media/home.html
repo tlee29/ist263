@@ -37,6 +37,14 @@
             padding:20px;
             margin-left:auto;
             margin-right:auto;
+            animation-name: change;
+            animation-duration: 4s;
+        }
+        @keyframes change {
+            0% {background-color: #A7B51B;}
+            25% {background-color: #D7A86E;}
+            50% {background-color:#F0F0D0;}
+            100% {background-color:#515e63;}
         }
         .intro {text-align: center;
                 line-height: 1.7em;
@@ -112,9 +120,9 @@
     <header id="header" class = "site-header">
         <div class="container">
             <nav id="site-navigation" class="main-navigation">
-                <a href="home.html" class="bar1">HOME</a>
-                <a href="project.html" class="bar2">PROJECTS</a> 
-                <a href="news.html" class="bar3">IT NEWS</a>
+                <a href="home.html" class="bar1" alt="bar1">HOME</a>
+                <a href="project.html" class="bar2" alt="bar2">PROJECTS</a> 
+                <a href="news.html" class="bar3" alt="bar3">IT NEWS</a>
             </nav>
         </div>
     </header>
@@ -210,7 +218,7 @@
         </div>
 
         <div class ="forms">
-        <form action = "https://formspree.io/f/mayvobnl" method = "post">
+        <form action = "https://formspree.io/f/mayvobnl" method = "post" alt="post">
             <label for="feedbackbox" class="feedback">Please Reach Out To Me!</label><br>
             <textarea name="feedback" id="feedbackbox"></textarea><br>
             <input type = "submit" value ="SEND" class="submitbutton">
